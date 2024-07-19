@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { View, Alert, StyleSheet } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { Provider as PaperProvider, Appbar, FAB } from 'react-native-paper';
+import { DarkTheme, Provider as PaperProvider, Appbar, FAB } from 'react-native-paper';
 import PasswordInput from './components/PasswordInput';
 import PasswordList from './components/PasswordList';
 
@@ -71,7 +71,7 @@ const App = () => {
   };
 
   return (
-    <PaperProvider>
+    <PaperProvider theme={DarkTheme}>
       <View style={styles.container}>
         <Appbar.Header>
           <Appbar.Content title="Password Fersoft" />
@@ -114,4 +114,3 @@ const styles = StyleSheet.create({
 });
 
 export default App;
-
