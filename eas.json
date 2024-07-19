@@ -13,7 +13,7 @@
       "releaseChannel": "preview",
       "android": {
         "buildType": "apk",
-        "image": "default"
+        "image": "latest"
       }
     },
     "production": {
